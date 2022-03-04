@@ -13,6 +13,7 @@
     <%= render 'layouts/navigation' %>
     <div id="page-content">
       <%= render 'layouts/messages' %>
+      <%= query_diet_widget if Rails.env.development? %>
       <%= yield %>
     </div>
     <%= render 'layouts/footer' %>
